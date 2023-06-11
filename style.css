@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -10,9 +10,22 @@
     height: 100vh;
     background: #eff4fd;
     position: relative;
-}
+} */
 
-nav{
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+*{margin:0;padding:0;font-family:sans-serif}.hero{position:relative;width:100%;height:100vh;background:#eff4fd;position:relative}
+
+nav{display:flex;width:84%;margin:auto;padding:20px 0;align-items:center;justify-content:space-between}.logo{width:150px;cursor:pointer}nav ul li{display:inline-block;list-style:none;margin:10px 20px}nav ul li a{text-decoration:none;color:#000;font-weight:bold}nav ul li a:hover{color:red}
+
+/* nav{
     display: flex;
     width: 84%;
     margin: auto;
@@ -40,7 +53,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: red;
-}
+}  */
 
 .detel{
     margin-left: 8%;
@@ -72,7 +85,9 @@ span{
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
+    text-decoration: wavy;
 }
+
 
 .images{
     width: 45%;
@@ -99,6 +114,7 @@ span{
     left: 45%;
 }
 
+
 .social{
     margin-left: 8%;
     margin-top: 100px;
@@ -113,3 +129,15 @@ span{
 .social a:hover{
     color: orange;
 }
+
+/* .skill-header{text-align:center;margin-top:1em}.skills{max-width:68.75rem;margin:auto;text-align:center;margin-top:.5rem}.skill-header{margin-bottom:1rem}.skills-wrapper img{padding:1.25rem}.icon{width:auto;height:auto} */
+.skill-header{text-align:center;margin-top:1em}.skills{max-width:68.75rem;margin:auto;text-align:center;margin-top:.5rem;display:flexbox;grid-template-columns:repeat(2,1fr);grid-gap:10rem}.skill-header{margin-bottom:1rem}.skills-wrapper img{padding:1.25rem}.icon{width:8%;height:auto}
+.skill-header span1{color: orange;}
+.skill-header{
+    font-size: 50px;
+    color: #212121;
+    margin-left: 8%;
+    text-align: left;
+}
+.contact-form{max-width:400px;margin:auto;padding:20px;background-color:#eff4fd;border-radius:5px}.contact-form label,.contact-form input,.contact-form textarea,.contact-form button{display:block;width:100%;margin-bottom:10px}.contact-form button{background-color:#4CAF50;color:#fff;padding:10px;border:none;border-radius:3px;cursor:pointer}.contact-form button:hover{background-color:#45a049}
+

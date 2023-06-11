@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <style>
+    html {
+        background-color: #eff4fd;
+    }
+  </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personle Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<!-- #Body -->
+
 <body>
+
     <div class="hero">
+        <!-- #Navigation -->
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
@@ -19,23 +31,84 @@
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">HIRE ME</a></li>
             </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
         </nav>
+    <!--#MyInfo-->
         <div class="detel">
-            <h1>I,M Sandeep <span>Velumala</span></h1>
-            <p>This is my official Portfolio website to showcase my 
-                all works related to <br> web development and ui design. </p>
+          <h1>I,M Sandeep <span>Velumala</span></h1>
+            <p>This is my official Portfolio website to showcase my
+                all works related to <br> web develSopment and ui design. </p>
             <a href="images/SandeepResume.pdf">Downdload RESUME</a>
         </div>
+    <!-- #Images -->
         <div class="images">
             <img src="images/shape.png" class="shape">
             <img src="images/sandy.png" class="sandy">
         </div>
-
+    <!-- #Social -->
         <div class="social">
-           <a href="https://www.linkedin.com/in/ide3p/"><i class="fab fa-linkedin"></i></a>
-           <a href="https://www.instagram.com/id3ep/"><i class="fab fa-instagram"></i></a>
-           <a href="https://github.com/iSande3p"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ide3p/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/id3ep/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/iSande3p" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
         </div>
     </div>
+    <!-- #Skills -->
+    <h1 class="skill-header">My <span1>STACK</span1></h1>
+    <section class="skills" id="skills">
+      <div class="skills-wrapper">
+          <div class="icons">
+              <img src="/images/icons/html.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/css.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/angularJs.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/react.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/api.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/aws.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/cld-cloud.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/git.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/java.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/linux.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/node-js.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/pgsql.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/python.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/spring.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/sql.svg" alt="" loading="lazy" class="icon icon-card" />
+              <img src="/images/icons/testing.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+      </div>
+  </section>
+
+  <div class="ContactForm">
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img src="images/contact.png" alt="">
+            </div>
+            <form action="#">
+                <div class="topic">Send Me A Message</div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Enter your name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Enter your email</label>
+                </div>
+                <div class="message-box">
+                  <textarea></textarea>
+                  <input type="text" required />
+                  <label>Enter your message</label>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+  
 </body>
+
 </html>
